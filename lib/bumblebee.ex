@@ -113,7 +113,7 @@ defmodule Bumblebee do
     "RobertaForCausalLM" => {Bumblebee.Text.Roberta, :for_causal_language_modeling},
     "RobertaModel" => {Bumblebee.Text.Roberta, :base},
     "T5Model" => {Bumblebee.Text.T5, :base},
-    "T5ForConditionalGeneration" => {Bumblebee.Text.T5, :for_conditional_generation},
+    "T5ForConditionalGeneration" => {Bumblebee.Text.T5, :for_conditional_generation},    
     "ViTForImageClassification" => {Bumblebee.Vision.Vit, :for_image_classification},
     "ViTForMaskedImageModeling" => {Bumblebee.Vision.Vit, :for_masked_image_modeling},
     "ViTModel" => {Bumblebee.Vision.Vit, :base},
@@ -168,6 +168,7 @@ defmodule Bumblebee do
     "mbart" => Bumblebee.Text.MbartTokenizer,
     "roberta" => Bumblebee.Text.RobertaTokenizer,
     "t5" => Bumblebee.Text.T5Tokenizer,
+    "T5EncoderModel" => Bumblebee.Text.T5Tokenizer,
     "whisper" => Bumblebee.Text.WhisperTokenizer,
     "xlm-roberta" => Bumblebee.Text.XlmRobertaTokenizer
   }
